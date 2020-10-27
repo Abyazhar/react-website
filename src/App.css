@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+* { box-sizing: border-box;
+    padding:0;
+    margin: 0;
+    font-family: 'Quattrocento Sans', sans-serif;
+    font-family:'Oxygen', sans-serif;
+}
+.herbs,
+.houseplants,
+.flowers,
+.pet-friendly,
+.shop,
+.login,
+.community,
+.homepage,
+.whyus{
+    display:flex;
+    height:90vh;
+    align-items:center;
+    justify-content:center;
+    font-size:3rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.homepage,
+.houseplants,
+.herbs,
+.flowers,
+.pet-friendly,
+.shop,
+.login {
+ display: flex;
+ height: 90vh;
+ align-items: center;
+ justify-content: center;
+ font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.houseplants {
+
+ color: #242424;
+ font-size: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.herbs {
+ 
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: #242424;
+ font-size: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+
+.flowers {
+ 
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: #242424;
+ font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.pet-friendly {
+ color: #242424;
+ font-size: 100px;
+}
+
+
+.homepage {
+ color: #fff;
+ font-size: 100px;
+}
+
+.community {
+ color: #242424;
+ font-size: 100px;
+}
+
+.login {
+ background-position: center;
+ background-size: cover;
+ background-repeat: no-repeat;
+ color: #242424;
+ font-size: 100px;
 }

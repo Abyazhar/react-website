@@ -1,0 +1,130 @@
+:root {
+    --primary:#fff;
+}
+
+.btn {
+    padding:8px 15px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    cursor:pointer;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color:var(--primary);
+    color:#aa00ff;
+    border: 0.1rem solid var(--primary);
+}
+
+.btn--outline {
+    background-color:transparent;
+    color:#fff;
+    padding:0.8rem 1.0rem;
+    border:0.1rem solid var(--primary);
+    transition:all 0.3s ease out;
+}
+
+.btn--cart{
+    background-color:#aa00ff;
+    color:#fff;
+    padding:0.8rem;
+    margin:0.5rem 0.7rem;
+    border:0.1rem solid #E1BEE7;
+    transition:all 0.3s ease out;
+}
+.btn--cart:hover{
+    
+    transition: all 0.6s ease out;
+    
+}
+@media screen and (max-width: 960px) {
+    .btn--cart{
+        margin-right: -2.0rem;
+
+    }
+}
+.btn--medium {
+    padding: 0.8rem 1.0rem;
+    font-size:18px;
+}
+
+.btn--large {
+    padding:1.2rem 2.6rem;
+    font-size: 1.0rem;
+}
+
+.btn--mobile {
+    text-align:center;
+    border-radius:0.4rem;
+    width:100%;
+    text-decoration:none;
+    font-size:1.5rem;
+    background-color: transparent;
+    color:#fff;
+    padding:1.4rem 2.0rem;
+    border:0.1rem solid #fff;
+    transition: all 0.3s ease-out;
+}
+
+.btn--wide {
+    padding:1.2rem 6.4rem;
+    font-size: 1.0rem;
+}
+
+.btn--large:hover, .btn--medium:hover, .btn--mobile:hover{
+    transition: all 0.3s ease-out;
+    background:#fff;
+    color:#aa00ff;
+}
+
+.btn--wide:hover{
+    color:#fff;
+    background-color:#8e44ad;
+    transition: 0.2s ease-out;
+}
+
+.btn-link{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-decoration:none;
+    height:100%;
+    width:100%; 
+}
+
+.blue{
+    background-color: #2196F3;
+    color:#fff;
+    border:none;
+}
+
+.purple{
+    background-color: #8e44ad;
+    color:#fff;
+    border:none;
+}
+
+.primary{
+    background-color: #242424;
+    color:#fff;
+    border:none;
+}
+
+.primary:hover{
+    background-color: #fff;
+    color:#242424;
+    border:none;
+}
+
+.green{
+    background-color: #AED581;
+    color:#fff;
+    border:none;
+}
+.green:hover{
+    background-color: #242424;
+    color:#fff;
+    border:none;
+}
+

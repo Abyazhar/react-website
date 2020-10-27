@@ -1,0 +1,34 @@
+.title {
+    padding: 4rem;
+    background: #fff;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    color: #252e48;
+    padding-top:80px;
+    margin:70px 0 0 0;
+  }
+   p{
+      margin:1.3rem 1.8rem;
+      padding:0.5rem 0.9rem;
+      font-size:18px;
+      font-weight: 500;
+      font-family:Oxygen,sans-serif;
+  }
+  .end__container{
+      display:flex;
+      flex-flow:column;
+      align-items:center;
+      justify-content: center;
+      object-fit:contain;
+  }
+  .end-btn{
+      margin:0.5rem 0.8rem;
+  }
+  .btn{
+    margin:0.3rem;
+}
