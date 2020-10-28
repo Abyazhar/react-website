@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/Button.scss';
+import '../Button/Button.scss';
 
 const STYLES= ['btn--primary', 'btn--outline','btn--cart']
 const SIZES = ['btn--medium', 'btn--large', 'btn--mobile','btn--wide']

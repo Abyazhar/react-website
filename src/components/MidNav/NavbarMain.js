@@ -1,5 +1,5 @@
 import React from 'react';
-import '../sass/NavbarMain.scss';
+import '../MidNav/NavbarMain.scss';
 
 
 export const MainNav = () => {

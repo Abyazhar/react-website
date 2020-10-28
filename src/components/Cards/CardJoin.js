@@ -1,7 +1,7 @@
 import React from 'react';
-import '../sass/CardJoin.scss';
+import '../Cards/CardJoin.scss';
 import {Link} from 'react-router-dom';
-import { Button } from './Button';
+import { Button } from '../Button/Button';
 
 function CardJoinUs() {
     return (

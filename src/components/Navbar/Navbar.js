@@ -2,9 +2,9 @@ import React, {useState,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import {GiThreeLeaves} from 'react-icons/gi';
 import { FaTimes} from 'react-icons/fa';
-import { Button } from '../components/Button';
-import '../sass/navbar.scss';
-import Dropdown from '../components/Dropdown';
+import { Button } from '../Button/Button';
+import '../Navbar/navbar.scss';
+import Dropdown from '../Dropdown/Dropdown';
 import {IoIosArrowDropdownCircle} from 'react-icons/io';
 import {CgLoadbarSound} from 'react-icons/cg';
 

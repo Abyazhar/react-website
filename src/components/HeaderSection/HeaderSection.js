@@ -1,15 +1,16 @@
 import React from 'react';
-import '../App.css';
-import { Button } from '../components/Button';
-import '../sass/HeaderSection.scss';
+import '../../App.css';
+import { Button } from '../Button/Button';
+import '../HeaderSection/HeaderSection.scss';
 import {Link} from 'react-router-dom';
+import Video from '../../videos/videos-2.mp4';
 
 
 
 function HeaderSection() {
     return (
         <div className='hero-container'>
-            <video src ='videos/videos-2.mp4' autoPlay loop muted/>
+            <video playsInline autoPlay loop muted src={Video} type='video/mp4' />
             <h1>Urban Garden</h1>
             <p>Adopt your new family home!</p>
 

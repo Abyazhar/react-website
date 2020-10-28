@@ -1,7 +1,7 @@
 import React from 'react';
-import '../sass/Footer.scss';
+import '../Footer/Footer.scss';
 import {GiThreeLeaves} from 'react-icons/gi';
-import { Button } from '../components/Button';
+import { Button } from '../Button/Button';
 import { Link } from 'react-router-dom';
 
 function Footer() {
