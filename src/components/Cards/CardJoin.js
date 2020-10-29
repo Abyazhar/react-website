@@ -10,7 +10,7 @@ function CardJoinUs() {
             <div className='title'>
                 <h1>Greening your Urban Home Starts Here!</h1>
                 <div className='end__container'>
-                    <p>Start your free 30 days trial.</p>
+                    <p>Sign Up to start your free 30 days trial.</p>
                     <div className='end-btn'>
                     <Link to='/shop'>
                     <Button
