@@ -18,7 +18,13 @@ function CardItem(props) {
                 <Link>
                  <Button className='btnx-cart' buttonStyle='btn--cart' 
                  buttonSize='btn--medium'>{props.button}</Button>
+
+                <Link>
+                <Button className='btnx-cart' buttonStyle='btn--buy' 
+                 buttonSize='btn--medium'>{props.button1}</Button>
                 </Link>
+                </Link>
+                
             </Link>
         </li>
         </>

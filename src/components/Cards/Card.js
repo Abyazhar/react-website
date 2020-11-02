@@ -1,6 +1,6 @@
 import React from 'react';
 import CardItem from '../Cards/CardItem';
-import '../Cards/Card.scss';
+import '../../components/Cards/Card.scss'
 import oxalis from '../../images/houseplants/oxalis triangular.jpg';
 import calathea from '../../images/houseplants/calathea makoyama.jpg';
 import ivy from '../../images/houseplants/english-ivy.jpg';
@@ -20,27 +20,29 @@ function Card() {
            text='Oxalis triangular'
            label='Best Sellers'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
 
            <CardItem 
            src={calathea}
            text='Calathea Makoyama'
            label='Best Sellers'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
 
            <CardItem 
            src={ivy}
            text='English Ivy'
            label='Best Sellers'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
            </ul>
            
           </div>
          </div>
         </div>
-            
         </section>
         </>
     );

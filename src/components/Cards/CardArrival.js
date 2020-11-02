@@ -19,21 +19,24 @@ function CardNewArrival() {
            text='Culantro (Mexican Coriander)'
            label='New Arrivals'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
 
            <CardItem 
            src={white}
            text=' Dracaena White'
            label='New Arrivals'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
 
            <CardItem 
            src={pine}
            text='Tillandsia Ionantha-Spanish Moss'
            label='New Arrivals'
            path='/shop'
-           button='Add to Cart'/>
+           button='Add to Cart'
+           button1='Buy Now'/>
            </ul>
            
           </div>

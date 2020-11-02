@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Button/Button.scss';
 
-const STYLES= ['btn--primary', 'btn--outline','btn--cart']
+const STYLES= ['btn--primary', 'btn--outline','btn--cart', 'btn--buy','FormButton', 'FormGoogle']
 const SIZES = ['btn--medium', 'btn--large', 'btn--mobile','btn--wide']
 const COLOR = ['primary','blue','purple', 'green']
 

@@ -12,22 +12,14 @@ function CardJoinUs() {
                 <div className='end__container'>
                     <p>Sign Up to start your free 30 days trial.</p>
                     <div className='end-btn'>
-                    <Link to='/shop'>
-                    <Button
-                  className='btn'
-                  buttonStyle='btn--outline'
-                  buttonSize='btn--large' 
-               > GET STARTED
-                    </Button>
-                  </Link>
 
-                    <Link to='/community'>
+                    <Link to='/signup'>
                     <Button
                     className='btn'
-                    buttonStyle='btn--primary'
+                    buttonStyle='btn--outline'
                     buttonSize='btn--large'
                     onClick={console.log('hey')}
-               >JOIN OUR COMMUNITY 
+               >GET STARTED 
                     </Button>
                     </Link>
 

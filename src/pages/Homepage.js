@@ -1,22 +1,25 @@
-import React from 'react';
-import '../App.css';
+import React from 'react'
+import Navbar from '../components/Navbar/Navbar';
 import HeaderSection from '../components/HeaderSection/HeaderSection';
-import Card from '../components/Cards/Card';
 import NavbarMain from '../components/MidNav/NavbarMain';
+import Card from '../components/Cards/Card';
 import CardArrival from '../components/Cards/CardArrival';
-import Footer from '../components/Footer/Footer';
 import CardJoin from '../components/Cards/CardJoin';
+import Footer from '../components/Footer/Footer';
 
-function Homepage(){
-    return(
+function Homepage() {
+    return (
         <>
+        <Navbar/>
         <HeaderSection/>
         <NavbarMain/>
         <Card/>
         <CardArrival/>
         <CardJoin/>
         <Footer/>
+            
         </>
     )
-} 
-export default Homepage;
+}
+
+export default Homepage
