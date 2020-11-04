@@ -1,12 +1,13 @@
 import React from 'react';
+import Navbar from '../components/Navbar/Navbar';
 import SigninGoogle from '../components/SigninGoogle/index';
-import SigninGoogleElements from '../components/SigninGoogle/SigninGoogleElements';
 
 
-const Login = props => {
+
+const Login  = props => {
     return (
         <>
-           <SigninGoogleElements {...props}/>
+           <Navbar {...props}/>
            <SigninGoogle/> 
         </>
     )

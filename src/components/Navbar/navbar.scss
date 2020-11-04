@@ -1,21 +1,23 @@
 .navbar {
     background:#1c2237;
-    height: 80px;
+    height:5.9rem;
     display: flex;
-    justify-content: center;
+    justify-content:normal;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index:999;
   }
   
   .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items:center;
+    height: 120px;
     max-width: 1500px;
+    margin:0;
   }
   
   .navbar-logo {
@@ -46,10 +48,24 @@
   }
   
   .nav-item {
-    height: 80px;
-   
+    height:-200px;
+    justify-content: space-evenly;
+    margin:0;
+    
   }
   
+  .login-menu{
+    display:inline-flex;
+    flex-direction:row;
+    justify-content: center;
+    list-style:none;
+    justify-content:right;
+    padding:1rem;
+    margin: 1rem;
+  }
+   .logout-item{
+     list-style: none;
+   }
   .nav-item:hover{
     border-bottom: 3px solid  #6200EE; ;
   }
@@ -58,10 +74,12 @@
     color: #fff;
     display: flex;
     align-items: center;
+    align-content:center;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
     border-bottom: 3px solid transparent;
+    
   }
   
   .fa-bars {

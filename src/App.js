@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React,{Component} from 'react';
 import './App.css';
 
-import {BrowserRouter as Router, Switch,Route}from 'react-router-dom';
+import {BrowserRouter as Router, Switch,Route, Redirect}from 'react-router-dom';
 import {auth} from './firebase/Util';//Login authentication from firebase
 
 import SignUp from './pages/SignUp';
@@ -33,14 +33,18 @@ class App extends Component {    //change func component => class
   componentDidMount(){ 
     this.authListener = auth.onAuthStateChanged(userAuth => {
       if (!userAuth) {
-        this.setState({
-          ...initialState
-        });
-      };                     //user not sign in = return null 
+        this.setState
+          ( ...initialState
+            )
+        
+     
+      };                                   //user not sign in = return null 
 
-      this.setState({       // bring currentuser to  the result of userAuth
+      this.setState({
         currentUser: userAuth
-      });
+      }                                   // bring currentuser to  the result of userAuth
+      
+      );
 
     })
   }
@@ -56,8 +60,10 @@ class App extends Component {    //change func component => class
     return (
       <Router>
         <Switch>
-          <Route path='/' exact component={Homepage} currentUser={currentUser}/> 
-          <Route path='/login' exact component={Login} currentUser={currentUser}/>
+          <Route path='/' exact render ={() => (<Homepage currentUser={currentUser}/> )} /> 
+
+          <Route path='/login' exact  render ={() => currentUser ? <Redirect to ='/'/> : (
+          <Login currentUser={currentUser}/> )}/>
           <Route path='/signup' exact component={SignUp} render currentUser={currentUser}/>
           <Route path='/whyus' exact component={Whyus}/>
           <Route path='/community' exact component={Community} currentUser = {currentUser}/>
