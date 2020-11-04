@@ -3,7 +3,6 @@
 }
 
 .btn {
-    padding:8px 15px;
     border-radius: 4px;
     outline: none;
     border:none;
@@ -16,20 +15,24 @@
     color:#aa00ff;
     border: 0.1rem solid var(--primary);
 }
+.btn--primary:hover{
+    transform:scale(1.1);
+}
 
 .btn--outline {
-    background-color:transparent;
+    background-color:#6200EE;
     color:#fff;
-    padding:0.8rem 1.0rem;
+    padding:0.5rem;
     border:0.1rem solid var(--primary);
     transition:all 0.3s ease out;
 }
 
 .btn--cart{
-    background-color:#aa00ff;
+    background-color:#6200EE;
     color:#fff;
-    padding:0.8rem;
-    margin:0.5rem 1rem;
+    padding:1.8rem;
+    margin-left:33%;
+
     border:0.1rem solid #E1BEE7;
     transition:all 0.3s ease out;
 }
@@ -38,9 +41,9 @@
 }
 
 .btn--buy{
-    background-color:#aa00ff;
+    background-color:#6200EE;
     color:#fff;
-    padding:1rem;
+    padding:1.8rem;
     margin:0.5rem 0.7rem;
     border:0.1rem solid #E1BEE7;
     transition:all 0.3s ease out;
@@ -134,13 +137,13 @@
 }
 
 .blue{
-    background-color: #2196F3;
+    background-color: #6200EE;
     color:#fff;
     border:none;
 }
 
 .purple{
-    background-color: #8e44ad;
+    background-color: #aa00ff;
     color:#fff;
     border:none;
 }

@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import '../../components/SigninGoogle/SiginGoogle.scss';
-import {Link} from 'react-router-dom';
-import {GiThreeLeaves} from 'react-icons/gi'
 import { Button } from '../Button/Button';
 import {SignInWithGoogle} from '../../firebase/Util';
 
 
-class SigninGoogle extends Component {
+
+class SigninGoogle extends Component{
 
     handleSubmit = async e => {
         e.preventDefault();//grab event prevent default
@@ -15,9 +14,6 @@ class SigninGoogle extends Component {
         return (
             <>
                 <div className='Container'>
-                        <Link to="/" className='Icon'>
-                        <GiThreeLeaves/>Urban Garden
-                        </Link>
                     <div className ='formWrap'>
                     <div className='Formcontent'>
                         <form className='Form' onSubmit={this.handleSubmit}>

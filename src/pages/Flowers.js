@@ -4,10 +4,10 @@ import Footer from '../components/Footer/Footer';
 import Navbar from '../components/Navbar/Navbar';
 
 
-function Flowers() {
+const Flowers = props => {
     return (
         <>
-           <Navbar/>
+           <Navbar {...props}/>
            <FlowerElements/>
            <Footer/>
            

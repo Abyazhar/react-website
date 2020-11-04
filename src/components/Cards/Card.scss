@@ -1,6 +1,7 @@
 .cards {
     padding: 4rem;
-    background: #fff;
+    background:linear-gradient(100deg, rgb(160, 56, 143)0%,rgb(133, 21, 224));
+   
   }
   
   h1 {
@@ -28,6 +29,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+   
   }
   
   .cards__item {
@@ -45,6 +47,7 @@
     flex-flow: column;
     margin-right: 0rem;
     width: 100%;
+    background: #fff;
     box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
     -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
     filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
@@ -110,10 +113,11 @@
     font-size: 18px;
     line-height: 24px; 
   }
-  .btnx-cart{
-    margin-left:0;
-    margin-right: -9rem;
-    background-color: blue;
+  .cards__button{
+    margin-left:17%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    padding:0;
   }
   
   @media only screen and (min-width: 1200px) {

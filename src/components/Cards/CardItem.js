@@ -15,16 +15,17 @@ function CardItem(props) {
                 <div className='cards__item__info'>
                     <h5 className='cards__item__text'>{props.text}</h5>
                 </div>
+                <div className='cards__button'>
                 <Link>
-                 <Button className='btnx-cart' buttonStyle='btn--cart' 
-                 buttonSize='btn--medium'>{props.button}</Button>
+                 <Button  buttonStyle='btn--cart' 
+                 >{props.button}</Button>
 
                 <Link>
                 <Button className='btnx-cart' buttonStyle='btn--buy' 
-                 buttonSize='btn--medium'>{props.button1}</Button>
+                 >{props.button1}</Button>
                 </Link>
-                </Link>
-                
+                </Link> 
+                </div>     
             </Link>
         </li>
         </>

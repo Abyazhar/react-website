@@ -7,6 +7,7 @@ import Video from '../../videos/videos-2.mp4';
 
 
 
+
 function HeaderSection() {
     return (
         <div className='hero-container'>
@@ -15,19 +16,19 @@ function HeaderSection() {
             <p>Adopt your new family home!</p>
 
             <div className='hero-btns'>
-            <Link to='/shop'>
+            <Link to='#'>
             <Button
             className='btns'
-            buttonStyle='btn--outline'
+            buttonStyle='btn--primary'
             buttonSize='btn--large' 
-        > GET STARTED
+        >   GET STARTED
             </Button>
             </Link>
 
             <Link to='/community'>
             <Button
             className='btns'
-            buttonStyle='btn--primary'
+            buttonStyle='btn--outline'
             buttonSize='btn--large'
             onClick={console.log('hey')}
         >JOIN OUR COMMUNITY 

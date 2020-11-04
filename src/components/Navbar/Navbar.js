@@ -7,8 +7,10 @@ import '../Navbar/navbar.scss';
 import Dropdown from '../Dropdown/Dropdown';
 import {IoIosArrowDropdownCircle} from 'react-icons/io';
 import {CgLoadbarSound} from 'react-icons/cg';
+import {auth} from './../../firebase/Util';
 
-function Navbar() {
+const Navbar = props => {
+const{currentUser} = props; //pass current user
 
 const [click, setClick] = useState(false);
 const [dropdown, setDropdown] =  useState(false);
@@ -47,6 +49,7 @@ useEffect(() => {
 
 window.addEventListener('resize', showButton) //call & show btn funct in here
 
+
 return (
     <>
       <nav className='navbar'>
@@ -55,61 +58,72 @@ return (
           <GiThreeLeaves className='navbar-icon'/>
             Urban Garden
           </Link>
+
           <div className='menu-icon' onClick={handleClick}>
           {click ?<FaTimes/> : <CgLoadbarSound/>}
           </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/whyus' className='nav-links' onClick={closeMobileMenu}>
-                Why Us?
+               {currentUser &&(
+                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+                   <li className='nav-item'>
+                <Link>
+                {button && <Button buttonStyle='btn--outline' onClick={() => auth.signOut}>Logout</Button>}  
               </Link>
-            </li>
-            <li className='nav-item'>
+                   </li>
+                 </ul>
+                   
+                 
+               )}
+               {!currentUser && ( 
+               <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+              <Link to='/whyus' className='nav-links' onClick={closeMobileMenu}>
+                 Why Us?
+              </Link>
+              </li>
+              <li className='nav-item'>
               <Link
                 to='/community'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Community
+               Community
               </Link>
-            </li>
-            <li className='nav-item'onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+              </li>
+              <li className='nav-item'onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
               <Link
-                to='/shop'
-                className='nav-links'
-                onClick={closeMobileMenu}
+                 to='/shop'
+                 className='nav-links'
+                 onClick={closeMobileMenu}
               >
-                Shops <IoIosArrowDropdownCircle className='dropdown-icon'/> 
+               Shops <IoIosArrowDropdownCircle className='dropdown-icon'/> 
               </Link>
-              {dropdown && <Dropdown />}
-            </li>
-            <br/>
-            
-            <li>
-            
-              <Link
-                to='/login'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}>
-                Login
+             {dropdown && <Dropdown />}
+              </li>
+              
+              <li>
+              <Link to='/login'>
+                {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}  
               </Link>
-            </li>
-            
-          </ul>
-          
-              <Link to='./login'>
-              {button && <Button buttonStyle='btn--outline'>LOGIN</Button>} 
-              </Link>
-                     
-          
-          
-            
-                
+              </li>
+              <li>
+               <Link
+                   to='/login'
+                   className='nav-links-mobile'
+                  onClick={closeMobileMenu}>
+                  Login
+               </Link>
+              </li>
+              </ul>
+                            
+              )}
         </div>
       </nav>
     </>
   );
 }
 
+Navbar.defaultProps ={
+  currentUser:null
+};
 
 export default Navbar;

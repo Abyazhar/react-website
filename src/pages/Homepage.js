@@ -7,10 +7,10 @@ import CardArrival from '../components/Cards/CardArrival';
 import CardJoin from '../components/Cards/CardJoin';
 import Footer from '../components/Footer/Footer';
 
-function Homepage() {
+const Homepage = props => {
     return (
         <>
-        <Navbar/>
+        <Navbar {...props}/>
         <HeaderSection/>
         <NavbarMain/>
         <Card/>

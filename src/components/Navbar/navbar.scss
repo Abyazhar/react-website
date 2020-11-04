@@ -1,5 +1,5 @@
 .navbar {
-    background: linear-gradient(90deg, rgb(28,34,55) 0%, rgb(37, 43, 51) 100%);
+    background:#1c2237;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@
   }
   
   .nav-item:hover{
-    border-bottom: 3px solid #aa00ff;
+    border-bottom: 3px solid  #6200EE; ;
   }
   
   .nav-links {
@@ -114,15 +114,15 @@
     }
   
     .nav-links:hover {
-      background-color:rgba(170,0,255,0.6);
+      background-color:#6200EE;
       color:#fff;
-      border-bottom: 3px solid #aa00ff;
       transition: all 0.3s ease;
       
     }
   
     .nav-item:hover {
       border:none;
+      
     }
   
     .nav-item {
@@ -168,7 +168,7 @@
     }
   
     .nav-links-mobile:hover {
-      background: rgba(170,0,255,0.6);
+      background: #6200EE;
       color:  #fff;
       transition: 250ms;
     }
