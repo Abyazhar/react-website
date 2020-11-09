@@ -4,7 +4,7 @@ import SigninGoogle from '../components/SigninGoogle/index';
 
 
 
-const Login  = props => {
+const Login = props => {
     return (
         <>
            <Navbar {...props}/>

@@ -12,7 +12,8 @@ export const Button =({
     onClick,
     buttonStyle,
     buttonSize,
-    buttonColor}) => { 
+    buttonColor,
+...otherProps}) => { 
         //return avctual value, abv in2 button GUI
 
         //function == showcase spec style we 
@@ -28,7 +29,7 @@ export const Button =({
 
         return (
             //wtvr wrds~lttrs:: sign up etc we want 2 pass up in2 btn GUI == btncreated
-        <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} onClick={onClick}
+        <button className={`btn ${checkButtonStyle} ${checkButtonSize} ${checkButtonColor}`} {...otherProps} onClick={onClick}
         type ={type}>{children}</button> 
         )
     }

@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import '../../components/SigninGoogle/SiginGoogle.scss';
+import {Text} from '../../components/Form/Text';
 import { Button } from '../Button/Button';
 import {SignInWithGoogle} from '../../firebase/Util';
 
@@ -8,8 +9,10 @@ import {SignInWithGoogle} from '../../firebase/Util';
 class SigninGoogle extends Component{
 
     handleSubmit = async e => {
-        e.preventDefault();//grab event prevent default
+        e.preventDefault();// handleSubmit event for onSubmit 
     }
+
+
     render(){
         return (
             <>
@@ -23,7 +26,7 @@ class SigninGoogle extends Component{
                             <label htmlFor='for' className='FormLabel'>Password</label>
                             <input type='password' className='FormInput' required></input>
                             <Button type='submit'buttonStyle='FormButton' >Continue</Button>
-                            <text className='Text'>Forget password</text>
+                            <Text className='Text'>Forget password</Text>
                             <div className='socialSignIn'>
                                 <div className='row'>
                                     <Button buttonStyle='FormGoogle' onClick={SignInWithGoogle}>
@@ -32,9 +35,9 @@ class SigninGoogle extends Component{
                                 </div>
                             </div>
                         </form>
+                         
                     </div>
-                    </div>
-                    
+                    </div>   
                 </div>
                 
             </>

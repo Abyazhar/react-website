@@ -7,11 +7,11 @@ import '../Navbar/navbar.scss';
 import Dropdown from '../Dropdown/Dropdown';
 import {IoIosArrowDropdownCircle} from 'react-icons/io';
 import {CgLoadbarSound} from 'react-icons/cg';
-import {auth} from './../../firebase/Util';
+import { auth } from '../../firebase/Util';
 
-const Navbar = props =>{
-const {currentUser} = (props);
 
+const Navbar = props => {
+const  {currentUser} = props;
  //pass current user
 
 const [click, setClick] = useState(false);
@@ -100,15 +100,16 @@ return (
                </Link>
               </li>
               </ul>
-              { currentUser &&(
-                <ul className='logout-item'>
-                  <li>
-                <Link onClick= {()=> auth.signOut}>
-                    {button && <Button buttonStyle='btn--outline'>LOGOUT</Button>}  
-                  </Link>
-                </li>
-                </ul> 
-              )}
+            {currentUser && (
+              <ul className='logout-item'>
+              <li>
+               <Link onClick={auth.signOut()}>
+                {button && <Button buttonStyle='btn--outline'>LOGOUT</Button>}  
+               </Link>
+               </li>
+              </ul> 
+            )}
+               
               {!currentUser && (
                 <ul className='login-menu'>
                 <li>
@@ -121,21 +122,14 @@ return (
                     {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}  
                   </Link>
                 </li>
-                </ul>
-              )}
-              
-
-
-                            
-              
-        </div>
+                </ul> 
+              )} 
+                      
+        </div> 
       </nav>
     </>
   );
 }
-
-Navbar.defaultProps ={
-  currentUser:null
-};
+Navbar.defaultProps={currentUser: null};
 
 export default Navbar;
