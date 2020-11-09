@@ -15,11 +15,13 @@ GoogleProvider.setCustomParameters({prompt:'select_account'});
 export const SignInWithGoogle = () => auth.signInWithPopup(GoogleProvider);
 
 
-firebase.auth().signOut().then(function() {
+export const Logout = () => {
+  firebase.auth().signOut().then(function() {
     console.log("Log Out is Successful")// Sign-out successful.
   }).catch(function(error) {
     console.log("Log Out Not Successful");
   });
+}
 
 
 

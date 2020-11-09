@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import { Button } from '../Button/Button';
+import {Button} from '../Button/Button';
 import '../HeaderSection/HeaderSection.scss';
 import {Link} from 'react-router-dom';
 import Video from '../../videos/videos-2.mp4';
@@ -16,32 +16,24 @@ function HeaderSection() {
             <p>Adopt your new family home!</p>
 
             <div className='hero-btns'>
-            <Link to='#'>
+            <Link to='/login'>
             <Button
-            className='btns'
             buttonStyle='btn--primary'
-            buttonSize='btn--large' 
+            button='btn--large' 
         >   GET STARTED
             </Button>
             </Link>
 
             <Link to='/community'>
             <Button
-            className='btns'
             buttonStyle='btn--outline'
             buttonSize='btn--large'
             onClick={console.log('hey')}
         >JOIN OUR COMMUNITY 
             </Button>
             </Link>
-       
             </div>
-        </div>
-        
-    
-       
-    
-        
+        </div>  
     );
 }
 

@@ -17,11 +17,11 @@ function CardItem(props) {
                 </div>
                 <div className='cards__button'>
                 <Link>
-                 <Button  buttonStyle='btn--cart' 
+                 <Button buttonStyle='btn--cart' 
                  >{props.button}</Button>
 
                 <Link>
-                <Button className='btnx-cart' buttonStyle='btn--buy' 
+                <Button buttonStyle='btn--buy' 
                  >{props.button1}</Button>
                 </Link>
                 </Link> 

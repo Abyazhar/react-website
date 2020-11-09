@@ -3,6 +3,7 @@ import '../../components/SigninGoogle/SiginGoogle.scss';
 import {Text} from '../../components/Form/Text';
 import { Button } from '../Button/Button';
 import {SignInWithGoogle} from '../../firebase/Util';
+import {Link} from 'react-router-dom';
 
 
 
@@ -27,8 +28,9 @@ class SigninGoogle extends Component{
                             <input type='password' className='FormInput' required></input>
                             <Button type='submit'buttonStyle='FormButton' >Continue</Button>
                             <Text className='Text'>Forget password</Text>
+                            <Link className='link' to='/signup'>Sign Up</Link>
                             <div className='socialSignIn'>
-                                <div className='row'>
+                                <div className='row'> 
                                     <Button buttonStyle='FormGoogle' onClick={SignInWithGoogle}>
                                         Sign in with Google
                                     </Button>

@@ -1,0 +1,55 @@
+ul.actions{
+    display:flex;
+    cursor: pointer;
+    list-style: none;
+    padding:0;  
+}
+
+ul.actions li{
+    vertical-align: middle;
+    margin:2rem;
+    padding:1rem;
+
+}
+
+.icon{
+color:#fff;
+align-items: center;
+text-decoration: none;
+font-size:4rem;
+line-height: 3rem;
+padding:1rem;
+margin: 1rem;
+white-space: nowrap;
+}
+.icon {
+    &:before {
+        margin-right: 0.5rem;
+    }
+
+    &.solo {
+        position: relative;
+        width: 4rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 4rem;
+        text-indent: 4rem;
+        overflow: hidden;
+        padding: 0;
+        white-space: nowrap;
+
+        &:before {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: inherit;
+            height: inherit;
+            line-height: inherit;
+            font-size: 1.25rem;
+            margin-right: 0;
+            text-align: center;
+            text-indent: 0;
+        }
+    }
+}

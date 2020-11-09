@@ -27,9 +27,7 @@ class App extends Component {
   {
     super(props);
     this.state= {
-       isLogin:false,
-       name:"",
-       photp:""
+       ...initialState
     }
   }
 

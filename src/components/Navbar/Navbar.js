@@ -7,7 +7,7 @@ import '../Navbar/navbar.scss';
 import Dropdown from '../Dropdown/Dropdown';
 import {IoIosArrowDropdownCircle} from 'react-icons/io';
 import {CgLoadbarSound} from 'react-icons/cg';
-import { auth } from '../../firebase/Util';
+import {Logout} from '../../firebase/Util';
 
 
 const Navbar = props => {
@@ -103,8 +103,8 @@ return (
             {currentUser && (
               <ul className='logout-item'>
               <li>
-               <Link onClick={auth.signOut()}>
-                {button && <Button buttonStyle='btn--outline'>LOGOUT</Button>}  
+               <Link>
+                {button && <Button onClick={Logout} buttonStyle='btn--outline'>LOGOUT</Button>}  
                </Link>
                </li>
               </ul> 
@@ -115,11 +115,6 @@ return (
                 <li>
                     <Link to='/login'>
                     {button && <Button buttonStyle='btn--outline'>LOGIN</Button>}  
-                  </Link>
-                </li>
-                <li>
-                <Link to='/signup'>
-                    {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}  
                   </Link>
                 </li>
                 </ul> 
