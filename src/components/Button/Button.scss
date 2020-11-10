@@ -61,7 +61,20 @@
     font-size:20px;
     cursor: pointer;
 }
-
+.FormContact{
+    background-color:transparent;
+    color:#717981 !important;
+    padding: 0.3rem 0;
+    border:0.2rem solid #717981;
+    border-radius: 4px;
+    max-width: 40%;
+    justify-content: right;
+     
+}
+.FormContact:hover{
+    background-color:#717981 !important;
+    color:#fff !important;
+}
 .FormGoogle{
     background:#6200EE;
     padding:1.8rem 2rem;
@@ -74,9 +87,6 @@
     text-transform:uppercase;
     cursor: pointer;
     justify-content: center;
-
-
-
 }
 
 @media screen and (max-width: 960px) {
