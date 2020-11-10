@@ -9,6 +9,7 @@ import SignUp from './pages/SignUp';
 import Shop from './pages/Shop';
 import  Community from './pages/Community';
 import Whyus from './pages/Whyus';
+import ContactUs from './pages/Contact';
 //Pages
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -67,8 +68,9 @@ componentWillUnmount()
           <Route path='/' exact component={Homepage} currentUser={currentUser}/>
           <Route path='/login' exact component = {Login} currentUser={currentUser}/>
           <Route path='/signup' exact component={SignUp} />
+          <Route path='/contact' exact component={ContactUs}/>
           <Route path='/whyus' exact component={Whyus}/>
-          <Route path='/community' exact component={Community} />
+          <Route path='/community' exact component={Community}/>
           <Route path='/shop' exact component={Shop}/>
           <Route path='/houseplants' exact component={Houseplants}/>
           <Route path='/herbs' exact component={Herbs}/>

@@ -15,7 +15,7 @@ function CardJoinUs() {
 
                     <Link to='/signup'>
                     <Button
-                    className='btn'
+                    
                     buttonStyle='btn--primary'
                     buttonSize='btn--large'
                     onClick={console.log('hey')}

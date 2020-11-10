@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { Component } from 'react';
+import Navbar from '../components/Navbar/Navbar';
+import Register from '../components/SignUp/index';
 
-export const SignUp = () => {
+class SignUp extends Component{
+  render(){
     return (
-        <div>
-            <h1>Welcome to Sign Up!</h1>
-            
-        </div>
+        <>
+        <Navbar/>
+        <Register/>  
+           
+        </>
     )
+  }
 }
 export default SignUp;
 
