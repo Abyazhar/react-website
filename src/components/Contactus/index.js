@@ -7,10 +7,12 @@ import { Link } from 'react-router-dom';
 import '../../components/Contactus/contactElements.scss';
 import { Button } from '../Button/Button';
 
+
 const SplitContact = () => {
     return (
-        <>
+	  <>
          <div className='hero-container'>
+              <img alt="bg" className='img'/>
               <h1>Contact Us</h1>
               <p>Feel free to contact us upon any enquiries!</p>
           </div> 
@@ -66,7 +68,8 @@ const SplitContact = () => {
 			 </form>
 		  </div>
 	     </section>
-        </>
+        
+	</>	
     )
 }
 

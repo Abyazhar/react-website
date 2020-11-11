@@ -31,13 +31,11 @@ function Footer() {
           <div class='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>Our Story</Link>
-            <Link to='/'>Testimonials</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
             <Link to='/contact'>Contact Us</Link>
-            <Link to='/'>Support</Link>
 
           </div>
         </div>
@@ -49,7 +47,6 @@ function Footer() {
           </div>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Whatsapp</Link>
             <Link to='/'>Twitter</Link>
