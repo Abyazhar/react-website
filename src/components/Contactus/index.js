@@ -61,7 +61,7 @@ const SplitContact = () => {
 					</div>
 					<div class="field">
 						<label for="message" className='Formlabel'>Message</label>
-						<textarea className='Formtext' name="message" id="message" rows="3"></textarea>
+						<textarea className='Formtext' name="message" id="message" rows="5"></textarea>
 					</div>
 						<Button buttonStyle='FormContact' input type="submit" value="Send Message">Send</Button>
 					</div>	
