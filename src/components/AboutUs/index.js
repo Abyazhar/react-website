@@ -10,7 +10,7 @@ const AboutUs = () => {
                 <div className="wrap">
                     <div className="content">
                         <h3>Our Story</h3>
-                        <p><span><img alt=""/>.....etc</span></p>
+                        <p><span><img className='image1' alt=""/>.....etc</span></p>
                     </div>
 
                 </div>

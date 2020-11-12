@@ -5,10 +5,10 @@ import Video from '../../videos/videos-8.mp4'
 const OurStoryHeader = () => {
     return (
         <>
-        <div className="hero-container">
+        <div className="story-container">
         <video playsInline autoPlay loop muted src={Video} type='video/mp4' />
-            <h1>What makes us different?</h1>
-            <p>We indulge you personally - <br/>and honestly to nature...</p>
+            <h3>What makes us different?</h3>
+            <p>We indulge you personally -- <br/>and honestly to nature...</p>
         </div>
         </>
     )

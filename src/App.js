@@ -10,6 +10,7 @@ import Shop from './pages/Shop';
 import  Community from './pages/Community';
 import Whyus from './pages/Whyus';
 import ContactUs from './pages/Contact';
+import Ourstory from './pages/Ourstory';
 //Pages
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
@@ -70,6 +71,7 @@ componentWillUnmount()
           <Route path='/signup' exact component={SignUp} />
           <Route path='/contact' exact component={ContactUs}/>
           <Route path='/whyus' exact component={Whyus}/>
+          <Route path='/ourstory' exact component={Ourstory}/>
           <Route path='/community' exact component={Community}/>
           <Route path='/shop' exact component={Shop}/>
           <Route path='/houseplants' exact component={Houseplants}/>
