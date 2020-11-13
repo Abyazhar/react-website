@@ -1,17 +1,17 @@
 import React from 'react'
 import '../AboutUs/Ourstory.scss'
-import OurStoryHeader from '../HeaderOurStory'
 import story1 from '../../images/bg/devon-janse.jpg'
+
+
 
 const AboutUs = () => {
     return (
         <>
-        <OurStoryHeader/>
         <section id='our-story'>
             <div className="story-container">
                 <div className="wrap">
                     <div className="content">
-                        <h3>Our Story</h3>
+                        <h3 className='inner'>Our Story</h3>
                         <span className='inner-content'><img src={story1} className='story-1' alt="Light"/>
                         <p>Urbanization dawn to be our greatest achievements. Nevertheless, it flawed 
                         our touch with nature. This is the seed that fuels Urban Garden, to give chances for 
@@ -23,11 +23,10 @@ const AboutUs = () => {
                         deserves to have their own personal plant oasis. And, we think finding your new plant 
                         should be, well, easy.</p></span>
                     </div>
-
                 </div>
             </div>
             </section>
-        </>
+            </>
     )
 }
 
