@@ -68,7 +68,7 @@ return (
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                <li className='nav-item'>
-              <Link to='/whyus' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/Ourstory' className='nav-links' onClick={closeMobileMenu}>
                  Why Us?
               </Link>
               </li>

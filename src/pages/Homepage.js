@@ -17,7 +17,6 @@ const Homepage = props => {
         <CardArrival/>
         <CardJoin/>
         <Footer/>
-            
         </>
     )
 }

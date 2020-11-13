@@ -19,11 +19,7 @@ const Parenthood = () => {
                          understand, plant category is difficult to navigate, especially with our shopping sprees
                          and expectations evolve. Our solution? Take the best parts of urban garden supply
                          center and create a seamless shopping experience without getting your 
-                         hands too dirty.<br/>
-                         Urban Garden is exclusively online delivering plants over tri-state area of Petaling Jaya.
-                         You can invite yourself to our Brick and Mortar stores to escape from the concrete jungle, 
-                         where our plants is displayed all year-round. Who knows, you may be lucky enough to join 
-                         our weekly workshops?
+                         hands too dirty.
                         </p></span>
                       
                   </div>

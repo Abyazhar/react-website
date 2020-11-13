@@ -1,5 +1,5 @@
 .Container{
-background:#a8aeb3;
+background:#e8e8e8;
 min-height: 6.92rem;
 position:sticky;
 bottom:0;
@@ -38,7 +38,7 @@ margin-top:6rem;
 .Form{
 background: #242424;
 max-width:400px;
-height:90%;
+height:80vh;
 z-index:1;
 display:grid;
 margin: 1rem;
@@ -73,7 +73,7 @@ box-shadow:0 1px 3px rgba(0,0,0,0.9);
 h1{
     font-size:2rem;
     margin-bottom:40px;
-    margin-top:-40px;
+    margin-top:-20px;
     color:#fff;
     line-height: 1;
     font-weight: 700;
