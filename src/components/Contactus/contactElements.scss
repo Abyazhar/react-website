@@ -1,5 +1,4 @@
 .img{
-    background: url('../../images/bg/img-1.jpg');
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -20,54 +19,70 @@
     }
    
 .main_wrap{
-    height:100%;
+   
     display:flex;
     flex-direction:row; //column or row :: google sign in btn position
     justify-content:space-evenly;
     background:#242424;
-    padding-top: 1rem; 
-    padding-bottom: 2rem;
+    padding-top: 2rem; 
+    
 }
 
 @media screen and (max-width: 960px) {
     .main_wrap{
         display:flex;
         flex-direction:column;
-        padding-left:7rem;
+        padding-left:0.2rem;
+        padding-bottom: 1rem;
         justify-items: center;
+        border-bottom: hidden;
     }
 }
-
-.wrap{
-    height:100%;
+ .wrap{
+    height:90vh;
     display:flex;
     justify-content: center;
     flex-direction: column;
-    width:50%;
+    width:45%;
     padding-bottom: 2rem;
+    z-index:1;
+
+
     
 }
 
 .content{
     border:0.1rem solid #717981;
+    border-top: hidden;
+    border-right: hidden;
+    border-left: hidden;
     border-radius: 4px;
     border-spacing: 1rem;
-    padding:3rem 4rem ;
     margin:0.02rem;
     list-style: none;
 }
 
 @media screen and (max-width: 960px) {
     .wrap{
-        width:60%;
+        max-width:90%;
     }
+
+     .wrap{
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    }
+
 }
 
 h3{
     display:flex;
     flex-direction: column;
-    align-items:center;
-    width:20%;
+    align-content:center;
+    width:10%;
     color: #909498;
 }
 p{
@@ -116,8 +131,9 @@ border-radius:5px;
     .form{
         display:flex;
         flex-direction:column;
-        padding:0 22px;
+        padding:1rem 22px;
         max-width:400px;
+        align-content: center;
     }
 }
 

@@ -3,9 +3,9 @@ import Video from '../../videos/videos-3.mp4';
 import '../Flower/FlowerElements.scss';
 import '../../components/Cards/Card.scss'
 import CardItem from '../Cards/CardItem';
-import coreopsis from '../../images/flower/Coreopsis.jpg';
-import geranium from '../../images/flower/geranium.jpg';
-import texas from '../../images/flower/dahlia.jpg';
+import Swan from '../../images/flower/swan river daisy.jpg';
+import Lady from '../../images/flower/pinklady.jpg';
+import Baby from '../../images/flower/babybreathxs.jpg';
 import {CgArrowDownO} from 'react-icons/cg';
 
 
@@ -29,7 +29,7 @@ function FlowerElements() {
           <div className="cards__wrapper">
            <ul className="cards__items">
            <CardItem 
-           src={coreopsis}
+           src={Swan}
            text='Coreopsis'
            label='Flowers'
            path='/shop'
@@ -37,16 +37,16 @@ function FlowerElements() {
            button1='Buy Now'/>
 
            <CardItem 
-           src={geranium}
-           text='Geranium'
+           src={Lady}
+           text='Pink Lady'
            label='Flowers'
            path='/shop'
            button='Add to Cart'
            button1='Buy Now'/>
 
            <CardItem 
-           src={texas}
-           text='Dahlia Regata '
+           src={Baby}
+           text='Low Baby Breath '
            label='Flowers'
            path='/shop'
            button='Add to Cart'

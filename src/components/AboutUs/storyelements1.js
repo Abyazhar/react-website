@@ -19,7 +19,7 @@ const Parenthood = () => {
                          understand, plant category is difficult to navigate, especially with our shopping sprees
                          and expectations evolve. Our solution? Take the best parts of urban garden supply
                          center and create a seamless shopping experience without getting your 
-                         hands too dirty.
+                         hands too dirty. 
                         </p></span>
                       
                   </div>

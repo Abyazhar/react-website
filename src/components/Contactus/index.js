@@ -6,13 +6,14 @@ import {FaInstagram} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import '../../components/Contactus/contactElements.scss';
 import { Button } from '../Button/Button';
+import img from '../../images/bg/img-1.jpg'
 
 
 const SplitContact = () => {
     return (
 	  <>
          <div className='hero-container'>
-              <img alt="bg" className='img'/>
+              <img alt="bg" src={img} className='img'/>
               <h1>Contact Us</h1>
               <p>Feel free to contact us upon any enquiries!</p>
           </div> 
@@ -33,7 +34,6 @@ const SplitContact = () => {
 								<h3>Email</h3>
 								<p><a href="/">urbangarden@co.tld</a></p>
 							</section>
-							<section className="content"> 
 								<h3>Social</h3>
                                 <ul>
                                     <li className='list'>
@@ -46,8 +46,7 @@ const SplitContact = () => {
                                         <Link to=''className='icons'><FaWhatsapp/></Link>
                                     </li>
                                     <li className='list'><Link to='' className='icons'><FaInstagram/></Link></li>
-                                </ul>
-                            </section>
+                                </ul>           
              </div>
 			 <form className='form'>
 			 <div class="Formcontent">
@@ -66,7 +65,7 @@ const SplitContact = () => {
 						<Button buttonStyle='FormContact' input type="submit" value="Send Message">Send</Button>
 					</div>	
 			 </form>
-		  </div>
+		</div>
 	     </section>
         
 	</>	

@@ -13,9 +13,9 @@ import Ourstory from './pages/Ourstory';
 //Pages
 import Homepage from './pages/Homepage';
 import Login from './pages/Login';
-import Houseplants from './pages/Houseplants/Houseplants'
-import Herbs from './pages/Herb/Herbs'
-import Flowers from './pages/Flowers'
+import Houseplants from './pages/Houseplants';
+import Herbs from './pages/Herbs'
+import Flowers from './pages/Flowers';
 import Petfriendly from './pages/Pet-friendly'
 
 const initialState ={
